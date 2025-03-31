@@ -3,6 +3,11 @@ layout: default
 title: Home
 ---
 
+* [FAQs](FAQs.html)
+* [Flavors](Flavors)
+* [How to update AGPS](How-To-update-AGPS)
+
+
 
 [![Translation status](https://hosted.weblate.org/widget/harbour-amazfish/svg-badge.svg)](https://hosted.weblate.org/engage/harbour-amazfish/)
 
