@@ -2,6 +2,7 @@
 image: "miband3.png"
 name: "Mi Band 3"
 link: "https://www.mi.com/"
+support: "Bronze"
 features:
   - id: "pairing"
     value: "?"

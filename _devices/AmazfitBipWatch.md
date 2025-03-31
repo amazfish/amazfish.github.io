@@ -2,6 +2,7 @@
 image: "amazfit-bip.png"
 name: "Amazfit Bip Watch"
 link: "https://www.amazfit.com/"
+support: "Gold"
 features:
   - id: "pairing"
     value: "?"

@@ -4,7 +4,8 @@ layout: default
 
 <h1> {{ page.name }} </h1>
 <img src="https://raw.githubusercontent.com/piggz/harbour-amazfish/refs/heads/master/ui/qml/pics/devices/{{ page.image }}" style="width:200px; float: right;"/>
-<a href="{{ page.link }}">{{ page.link }}</a> 
+<a href="{{ page.link }}">{{ page.link }}</a> <br/>
+Support level: {{ page.support }}
 
 <br/><br/>
 
@@ -15,7 +16,6 @@ layout: default
 {% endif %}
 
 <table>
-
         {% for feature in page.features %}
             {% case feature.id %}
                 {% when "pairing" %}              <tr><td>Pairing</td>                 <td>{{ feature.value }}</td></tr>

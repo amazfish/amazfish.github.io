@@ -2,6 +2,7 @@
 image: "amazfit-bips.png"
 name: "Amazfit Bip S"
 link: "https://www.amazfit.com/"
+support: "Silver"
 features:
   - id: "pairing"
     value: "?"

@@ -38,30 +38,9 @@ Requires Sailfish version 3.0.3.8 or above due to changes in the base Sailfish i
 ## Supported Devices
 
 There are 3 tiers of supported devices:
-
-### Gold
-
-These are devices I have, have tested, and will try not to break any functionality for any included:
- * Amazfit Bip
- * Amazfit GTS
- * Amazfit GTR2
- * Pinetime InfiniTime
- * Bangle.js - [Android integration](https://www.espruino.com/Gadgetbridge) app should be installed
-
-### Silver
-
-These are devices which are properly implemented in the application, but I do not have and are tested by the community, and include:
- * Amazfit BipS
- * Amazfit Bip Lite
- * Amazfit GTS2
- 
-I do not promise not to break functionality in these, but will fix where I can.
-
-### Bronze
-
-These are devices which use a protocol that is close to another supported device, and so is treated like that device.  Your mileage may vary with these devices.
- * MiBand 2/3/4
- * Amazfit Cor
+* Gold - These are devices I have, have tested, and will try not to break any functionality.
+* Silver - These are devices which are properly implemented in the application, but I do not have and are tested by the community
+* Bronze - These are devices which use a protocol that is close to another supported device, and so is treated like that device.  Your mileage may vary with these devices.
  
 ## Powered by KEXI
 
@@ -76,9 +55,3 @@ Credits to:
 
     The Gadgetbridge devs, which gave me a lot of hints and inspiration from their device code.
     https://codeberg.org/Freeyourgadget/Gadgetbridge
-
-## Automatic Reconnecting
-
-Depending on device and operating system if there are problems with pairing or reconnecting you may need to take one action.
-Open the bluetooth settings on your phone and head for known devices. There enter the settings for the watch and enable "reconnect automatically" for it.
-This should fix pairing and reconnecting issues.

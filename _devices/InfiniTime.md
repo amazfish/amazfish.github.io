@@ -2,6 +2,7 @@
 image: "pinetime.png"
 name: "InfiniTime"
 link: "https://infinitime.io/"
+support: "Gold"
 features:
   - id: "pairing"
     value: "Y"

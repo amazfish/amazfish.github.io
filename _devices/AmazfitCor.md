@@ -2,6 +2,7 @@
 image: "amazfit-cor.png"
 name: "Amazfit Cor"
 link: "https://www.amazfit.com/"
+support: "Bronze"
 features:
   - id: "pairing"
     value: "?"

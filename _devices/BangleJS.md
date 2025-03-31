@@ -2,6 +2,7 @@
 image: "banglejs.png"
 name: "Bangle.js"
 link: "https://banglejs.com/"
+support: "Gold"
 features:
   - id: "pairing"
     value: "?"

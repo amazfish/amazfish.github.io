@@ -2,6 +2,7 @@
 image: "amazfit-gts.png"
 name: "Amazfit GTS"
 link: "https://www.amazfit.com/"
+support: "Gold"
 features:
   - id: "pairing"
     value: "?"
