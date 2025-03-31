@@ -22,17 +22,15 @@ Companion application for Huami Devices (such as Amazfit Bip, Cor, MiBand2/3 and
 ## Index
 
 * [Build instructions](build-instructions)
-* [FAQs](FAQs)
-* [Flavors](Flavors)
-* [How to update AGPS](How-To-update-AGPS)
 * [Devices](/devices)
+* [Flavors](Flavors)
+* [FAQs](FAQs)
+* [How to update AGPS](How-To-update-AGPS)
 * [Server Side Pairing Code](Server-Side-Pairing)
 * [Note for GTR2 / GTS2 owners](Appearance)
 * [Firmware download](firmware-download)
 * [Button Actions](button-actions) 
 * [Automatic Reconnecting](automatic-reconnecting)
-
-
 
 ## Supported Devices
 
@@ -43,14 +41,25 @@ There are 3 tiers of supported devices:
  
 ## Powered by KEXI
 
-As of version 0.5.1, activity data is retrieved into an SQLite database.  Because I think it is important to allow individuals to be in control of their own data, and that they should have the ability to analyze it themselves, I have chosen to store data in a KEXI compatible database.  This will allow you to copy the database from the phone, and open it up inside KEXI on Linux/Windows/Mac and perform queries and reports on it.  This added ability means I link to a couple of KDE libraries, which should be installed automatically.
+As of version 0.5.1, activity data is retrieved into an SQLite database.  Because I think it is important to allow individuals to be in control of their own data, and that
+they should have the ability to analyze it themselves, I have chosen to store data in a KEXI compatible database.  This will allow you to copy the database from the phone,
+and open it up inside KEXI on Linux/Windows/Mac and perform queries and reports on it.  This added ability means I link to a couple of KDE libraries, which should be
+installed automatically.
 
 
 ---
 
-Source: https://github.com/piggz/harbour-amazfish
+Source: [https://github.com/piggz/harbour-amazfish](https://github.com/piggz/harbour-amazfish)
 
 Credits to:
 
     The Gadgetbridge devs, which gave me a lot of hints and inspiration from their device code.
     https://codeberg.org/Freeyourgadget/Gadgetbridge
+
+## ❤️ Donate
+
+If you appreciate this project, consider supporting its development!  
+
+[![Donate via PayPal](https://img.shields.io/badge/Donate-PayPal-blue.svg)](https://paypal.me/piggz)  
+
+Your support helps keep this project going. Thank you! 🙌  
