@@ -34,3 +34,5 @@ features:
   - id: "weather"
     value: "Y"
 ---
+
+* [Server Side Pairing Code](Server-Side-Pairing)
