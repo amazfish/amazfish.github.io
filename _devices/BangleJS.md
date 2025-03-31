@@ -5,11 +5,11 @@ link: "https://banglejs.com/"
 support: "Gold"
 features:
   - id: "pairing"
-    value: "?"
+    value: "Y"
   - id: "notifications"
-    value: "?"
+    value: "Y"
   - id: "calls"
-    value: "?"
+    value: "Y"
   - id: "settings"
     value: "?"
   - id: "alarms"
@@ -33,7 +33,7 @@ features:
   - id: "sync_time"
     value: "?"
   - id: "weather"
-    value: "?"
+    value: "Y"
 ---
 
 [Android integration](https://www.espruino.com/Gadgetbridge) app should be installed.
