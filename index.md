@@ -1,3 +1,9 @@
+---
+layout: default
+title: Home
+---
+
+
 [![Translation status](https://hosted.weblate.org/widget/harbour-amazfish/svg-badge.svg)](https://hosted.weblate.org/engage/harbour-amazfish/)
 
 # Amazfish
