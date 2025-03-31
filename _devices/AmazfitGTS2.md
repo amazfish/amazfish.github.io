@@ -34,3 +34,5 @@ features:
   - id: "weather"
     value: "?"
 ---
+
+* [Note for GTR2 / GTS2 owners](Appearance)

@@ -32,7 +32,7 @@ features:
   - id: "sync_time"
     value: "Y"
   - id: "weather"
-    value: "?"
+    value: "Y"
 ---
 
 Infinitime is fast open-source firmware for the [Pine64 PineTime](https://pine64.org/devices/pinetime/).
