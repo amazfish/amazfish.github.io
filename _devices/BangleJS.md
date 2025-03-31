@@ -34,6 +34,8 @@ features:
     value: "Y"
   - id: "weather"
     value: "Y"
+  - id: "find_my_phone"
+    value: "Y"
 ---
 
 [Android integration](https://www.espruino.com/Gadgetbridge) app should be installed.

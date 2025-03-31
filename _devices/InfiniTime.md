@@ -34,6 +34,8 @@ features:
     value: "Y"
   - id: "weather"
     value: "Y"
+  - id: "find_my_phone"
+    value: "?"
 ---
 
 Infinitime is fast open-source firmware for the [Pine64 PineTime](https://pine64.org/devices/pinetime/).

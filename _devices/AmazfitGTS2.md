@@ -34,6 +34,8 @@ features:
     value: "?"
   - id: "weather"
     value: "?"
+  - id: "find_my_phone"
+    value: "?"
 ---
 
 * [Note for GTR2 / GTS2 owners](Appearance)

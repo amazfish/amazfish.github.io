@@ -35,9 +35,10 @@ title: Devices
                     <th>Music Control</th>
                     <th>Sync Time</th>
                     <th>Weather</th>
+                    <th>Find my phone</th>
                 </tr>
 
-{% assign feature_ids = "pairing,notifications,calls,settings,alarms,sync_steps_heartrate,sync_activities,calendar,watchface_download,firmware_upload,navigation,battery_status,music_control,sync_time,weather" | split: "," %}
+{% assign feature_ids = "pairing,notifications,calls,settings,alarms,sync_steps_heartrate,sync_activities,calendar,watchface_download,firmware_upload,navigation,battery_status,music_control,sync_time,weather,find_my_phone" | split: "," %}
 
 {% for device in site.devices %}
     <tr>
