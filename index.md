@@ -6,7 +6,7 @@ title: Home
 * [FAQs](FAQs)
 * [Flavors](Flavors)
 * [How to update AGPS](How-To-update-AGPS)
-* [Devices](/devices/)
+* [Devices](/devices)
 
 
 [![Translation status](https://hosted.weblate.org/widget/harbour-amazfish/svg-badge.svg)](https://hosted.weblate.org/engage/harbour-amazfish/)
