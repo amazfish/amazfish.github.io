@@ -1,3 +1,6 @@
+---
+layout: default
+---
 ## Automatic Reconnecting
 
 Depending on device and operating system if there are problems with pairing or reconnecting you may need to take one action.
