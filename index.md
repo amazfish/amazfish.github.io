@@ -11,8 +11,6 @@ title: Home
 
 Companion application for Huami Devices (such as Amazfit Bip, Cor, MiBand2/3 and GTS and GTS) and the Pinetime Infinitime.
 
-Requires Sailfish version 3.0.3.8 or above due to changes in the base Sailfish image.  Instructions for [compilation](https://github.com/piggz/harbour-amazfish/blob/master/documentation/build-instructions.md) including for other operating systems can be found in the `documentation/` directory.
-
 ## Installation
 * Install the ["chum" repository](https://chumrpm.netlify.app/) (by downloading the RPM file and running `devel-su pkcon install-local RPM_FILENAME` )
 * Run `devel-su pkcon refresh`
@@ -23,6 +21,7 @@ Requires Sailfish version 3.0.3.8 or above due to changes in the base Sailfish i
 
 ## Index
 
+* [Build instructions](build-instructions)
 * [FAQs](FAQs)
 * [Flavors](Flavors)
 * [How to update AGPS](How-To-update-AGPS)
