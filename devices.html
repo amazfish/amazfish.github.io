@@ -1,0 +1,69 @@
+---
+layout: default
+title: Devices
+---
+
+<div id="page-wrapper">
+
+    <!-- Banner -->
+    <section id="banner">
+        <div class="content">
+            <h2>{{ page.title }}</h2>
+            <p>{{ page.description }}</p>
+        </div>
+    </section>
+
+    <!-- Main -->
+    <section id="blog" class="container">
+        <table>
+            {% if site.devices.size > 0 %}
+                <!-- Table Header -->
+                <tr>
+                    <th>Device</th>
+                    <th>Pairing</th>
+                    <th>Notifications</th>
+                    <th>Calls</th>
+                    <th>Settings</th>
+                    <th>Alarms</th>
+                    <th>Sync Steps/HR</th>
+                    <th>Sync Activities</th>
+                    <th>Calendar</th>
+                    <th>Watchface Download</th>
+                    <th>Firmware Upload</th>
+                    <th>Navigation</th>
+                    <th>Battery Status</th>
+                    <th>Music Control</th>
+                    <th>Sync Time</th>
+                    <th>Weather</th>
+                </tr>
+
+{% assign feature_ids = "pairing,notifications,calls,settings,alarms,sync_steps_heartrate,sync_activities,calendar,watchface_download,firmware_upload,navigation,battery_status,music_control,sync_time,weather" | split: "," %}
+
+{% for device in site.devices %}
+    <tr>
+        <td> <a href="{{ device.url | relative_url }}">{{ device.name }}</a></td>
+
+        {% for feature_id in feature_ids %}
+            {% assign feature_value = "?" %}
+            {% for feature in device.features %}
+                {% if feature.id == feature_id %}
+                    {% assign feature_value = feature.value %}
+                {% endif %}
+            {% endfor %}
+            <td>{{ feature_value }}</td>
+        {% endfor %}
+    </tr>
+{% endfor %}
+
+            {% else %}
+                <tr>
+                    <td colspan="16">No devices found.</td>
+                </tr>
+            {% endif %}
+        </table>
+
+        <div style="clear:both;">
+        </div>
+
+    </section>
+</div>
