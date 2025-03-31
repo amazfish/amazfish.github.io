@@ -7,7 +7,7 @@ layout: default
 # Ubuntu Touch  
 - Available in the [Open Store](https://open-store.io/app/uk.co.piggz.amazfish).  
 
-# Flatpak  
+# Flatpak / Kirigami
 - Available on [Flathub](https://flathub.org/apps/uk.co.piggz.amazfish).  
 - Flatpak does not provide background services; the application must run in the foreground.  
 - There might be issues with the on-screen keyboard. To open the keyboard, perform a long press.  
