@@ -35,4 +35,4 @@ features:
     value: "Y"
 ---
 
-* [Server Side Pairing Code](Server-Side-Pairing)
+* [Server Side Pairing Code](/Server-Side-Pairing)
