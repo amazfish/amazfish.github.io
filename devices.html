@@ -20,45 +20,49 @@ title: Devices
                 <!-- Table Header -->
                 <tr>
                     <th>Device</th>
-                    <th>Pairing</th>
-                    <th>Notifications</th>
-                    <th>Calls</th>
-                    <th>Settings</th>
-                    <th>Alarms</th>
-                    <th>Sync Steps/HR</th>
-                    <th>Sync Activities</th>
-                    <th>Calendar</th>
-                    <th>Watchface Download</th>
-                    <th>Firmware Upload</th>
-                    <th>Navigation</th>
-                    <th>Battery Status</th>
-                    <th>Music Control</th>
                     <th>Sync Time</th>
-                    <th>Weather</th>
-                    <th>Find my phone</th>
+                    <th>Notifications</th>
+                    <th>Sync Steps/HR</th>
+                    <th>Calendar</th>
+                    <th>Music Control</th>
+                    <th>Other</th>
                 </tr>
 
-{% assign feature_ids = "pairing,notifications,calls,settings,alarms,sync_steps_heartrate,sync_activities,calendar,watchface_download,firmware_upload,navigation,battery_status,music_control,sync_time,weather,find_my_phone" | split: "," %}
+{% assign feature_ids = "sync_time,notifications,sync_steps_heartrate,calendar,music_control,pairing,calls,settings,alarms,sync_activities,watchface_download,firmware_upload,navigation,battery_status,weather,find_my_phone" | split: "," %}
+{% assign primary_features = feature_ids | slice: 0, 5 %}
+{% assign remaining_features = feature_ids | slice: 5, feature_ids.size %}
 
 {% for device in site.devices %}
     <tr>
         <td> <a href="{{ device.url | relative_url }}">{{ device.name }}</a></td>
 
-        {% for feature_id in feature_ids %}
-            {% assign feature_value = "?" %}
-            {% for feature in device.features %}
-                {% if feature.id == feature_id %}
-                    {% assign feature_value = feature.value %}
-                {% endif %}
+            {% for feature_id in primary_features %}
+                {% assign feature_value = "?" %}
+                {% for feature in device.features %}
+                    {% if feature.id == feature_id %}
+                        {% assign feature_value = feature.value %}
+                    {% endif %}
+                {% endfor %}
+                <td>{{ feature_value }}</td>
             {% endfor %}
-            <td>{{ feature_value }}</td>
-        {% endfor %}
+
+
+            {% assign count = 0 %}
+            {% for feature_id in remaining_features %}
+                {% for feature in device.features %}
+                    {% if feature.id == feature_id and feature.value contains "Y" %}
+                        {% assign count = count | plus: 1 %}
+                    {% endif %}
+                {% endfor %}
+            {% endfor %}
+            <td>{{ count }}</td>
+
     </tr>
 {% endfor %}
 
             {% else %}
                 <tr>
-                    <td colspan="16">No devices found.</td>
+                    <td colspan="7">No devices found.</td>
                 </tr>
             {% endif %}
         </table>
@@ -68,7 +72,7 @@ title: Devices
 <h2>Key</h2>
 
 <ul>
-    <li><strong>Y</strong> – Yes, fully implemented</li>
+    <li><strong>Y</strong> – Yes, fully implemented (or number of other working features)</li>
     <li><strong>P</strong> – Partially implemented</li>
     <li><strong>N</strong> – Not working yet</li>
     <li><strong>?</strong> – Unknown</li>
