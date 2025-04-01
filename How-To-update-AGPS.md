@@ -1,7 +1,9 @@
 ---
 layout: default
-title: test
+title: How to update AGPS
 ---
+## How to update AGPS
+
 AGPS files need to be downloaded from the Huami servers, then sent to the watch.  This can be achieved with the following method
 
 1. Use the huami-token python tool to download the AGPS files

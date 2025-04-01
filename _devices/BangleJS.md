@@ -1,6 +1,6 @@
 ---
 image: "banglejs.png"
-name: "Bangle.js"
+title: "Bangle.js"
 link: "https://banglejs.com/"
 support: "Gold"
 features:

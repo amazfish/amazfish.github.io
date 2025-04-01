@@ -1,6 +1,6 @@
 ---
 image: "amazfit-gts.png"
-name: "Amazfit GTS"
+title: "Amazfit GTS"
 link: "https://www.amazfit.com/"
 support: "Gold"
 features:

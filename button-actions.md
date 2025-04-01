@@ -1,5 +1,6 @@
 ---
 layout: default
+title: Button Actions
 ---
 ## Button Actions
 

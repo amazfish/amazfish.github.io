@@ -1,6 +1,6 @@
 ---
 image: "amazfit-cor.png"
-name: "Amazfit Cor"
+title: "Amazfit Cor"
 link: "https://www.amazfit.com/"
 support: "Bronze"
 features:

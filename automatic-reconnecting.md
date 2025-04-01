@@ -1,5 +1,6 @@
 ---
 layout: default
+title: Automatic Reconnecting
 ---
 ## Automatic Reconnecting
 

@@ -1,6 +1,8 @@
 ---
 layout: default
+title: Note for GTR2 / GTS2 owners
 ---
+# Note for GTR2 / GTS2 owners
 These watches fail to follow the Bluetooth specification, which states that the "Appearance" characteristic should be readable without auth/encryption.  In fact, it seems this
 characteristic is not readable at all, even though it is available, and this causes a failure in Bluez.  It seems like Android/iOS are less strict in this regard.
 

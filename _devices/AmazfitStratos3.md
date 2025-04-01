@@ -1,6 +1,6 @@
 ---
 image: "miband4.png"
-name: "Amazfit Stratos 3"
+title: "Amazfit Stratos 3"
 link: "https://www.amazfit.com/"
 features:
   - id: "pairing"

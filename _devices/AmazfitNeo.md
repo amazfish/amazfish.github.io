@@ -1,6 +1,6 @@
 ---
 image: "amazfit-neo.png"
-name: "Amazfit Neo"
+title: "Amazfit Neo"
 link: "https://www.amazfit.com/"
 features:
   - id: "pairing"

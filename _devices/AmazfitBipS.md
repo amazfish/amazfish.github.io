@@ -1,6 +1,6 @@
 ---
 image: "amazfit-bips.png"
-name: "Amazfit Bip S"
+title: "Amazfit Bip S"
 link: "https://www.amazfit.com/"
 support: "Silver"
 features:

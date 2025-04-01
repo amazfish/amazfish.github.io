@@ -57,7 +57,7 @@ title: Devices
 
 {% for device in site.devices %}
     <tr>
-        <td> <a href="{{ device.url | relative_url }}">{{ device.name }}</a></td>
+        <td> <a href="{{ device.url | relative_url }}">{{ device.title }}</a></td>
 
             {% for feature_id in primary_features %}
                 {% assign feature_value = "" %}

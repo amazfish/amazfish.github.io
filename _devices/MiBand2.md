@@ -1,6 +1,6 @@
 ---
 image: "miband2.png"
-name: "MI Band 2"
+title: "MI Band 2"
 link: "https://www.mi.com/"
 support: "Bronze"
 features:

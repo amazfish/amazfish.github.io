@@ -1,6 +1,6 @@
 ---
 image: "amazfit-gtr.png"
-name: "Amazfit GTR"
+title: "Amazfit GTR"
 link: "https://www.amazfit.com/"
 features:
   - id: "pairing"

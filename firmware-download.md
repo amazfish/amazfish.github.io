@@ -1,5 +1,6 @@
 ---
 layout: default
+title: Firmware Download
 ---
 
 ## Firmware Download - READ FIRST - I am not liable if you brick your watch ;)

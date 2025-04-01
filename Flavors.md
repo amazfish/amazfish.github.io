@@ -1,5 +1,6 @@
 ---
 layout: default
+title: Flavors
 ---
 # SailfishOS
 - Available in the [Chum repository](https://sailfishos-chum.github.io/apps/harbour-amazfish/).

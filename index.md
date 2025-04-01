@@ -3,8 +3,6 @@ layout: default
 title: Home
 ---
 
-![Amazfish logo](https://raw.githubusercontent.com/piggz/harbour-amazfish/refs/heads/master/ui/icons/172x172/harbour-amazfish-ui.png)
-
 # Amazfish
 
 [![Translation status](https://hosted.weblate.org/widget/harbour-amazfish/svg-badge.svg)](https://hosted.weblate.org/engage/harbour-amazfish/)

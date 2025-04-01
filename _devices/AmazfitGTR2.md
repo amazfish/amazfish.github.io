@@ -1,6 +1,6 @@
 ---
 image: "amazfit-gtr2.png"
-name: "Amazfit GTR 2"
+title: "Amazfit GTR 2"
 link: "https://www.amazfit.com/"
 support: "Gold"
 features:

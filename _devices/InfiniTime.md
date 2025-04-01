@@ -1,6 +1,6 @@
 ---
 image: "pinetime.png"
-name: "InfiniTime"
+title: "InfiniTime"
 link: "https://infinitime.io/"
 support: "Gold"
 features:

@@ -1,6 +1,6 @@
 ---
 image: "miband4.png"
-name: "Mi Smart Band 4"
+title: "Mi Smart Band 4"
 link: "https://www.mi.com/"
 support: "Bronze"
 features:
