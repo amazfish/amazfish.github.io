@@ -34,5 +34,5 @@ features:
   - id: "weather"
     value: "Y"
   - id: "find_my_phone"
-    value: "?"
+    value: "N/A"
 ---

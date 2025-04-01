@@ -16,7 +16,7 @@ features:
   - id: "sync_steps_heartrate"
     value: "Y"
   - id: "sync_activities"
-    value: "?"
+    value: ""
   - id: "calendar"
     value: "N/A"
   - id: "watchface_download"
@@ -34,7 +34,7 @@ features:
   - id: "weather"
     value: "Y"
   - id: "find_my_phone"
-    value: "?"
+    value: ""
 ---
 
 * [Server Side Pairing Code](/Server-Side-Pairing)

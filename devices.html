@@ -5,6 +5,29 @@ title: Devices
 
 <div id="page-wrapper">
 
+
+<style>
+.featureY {
+    background-color: lightgreen;
+    color: black;
+}
+
+.featureP {
+    background-color: orange;
+    color: black;
+}
+
+.featureNA {
+    background-color: gray;
+    color: white;
+}
+
+.featureUnk {
+    color: black;
+}
+</style>
+
+
     <!-- Banner -->
     <section id="banner">
         <div class="content">
@@ -37,13 +60,24 @@ title: Devices
         <td> <a href="{{ device.url | relative_url }}">{{ device.name }}</a></td>
 
             {% for feature_id in primary_features %}
-                {% assign feature_value = "?" %}
+                {% assign feature_value = "" %}
                 {% for feature in device.features %}
                     {% if feature.id == feature_id %}
                         {% assign feature_value = feature.value %}
                     {% endif %}
                 {% endfor %}
-                <td>{{ feature_value }}</td>
+                {% assign feature_class = "featureUnk" %}
+                {% if feature_value contains "Y" %}
+                    {% assign feature_class = "featureY" %}
+                {% elsif feature_value contains "P" %}
+                    {% assign feature_class = "featureP" %}
+                {% elsif feature_value contains "N/A" %}
+                    {% assign feature_class = "featureNA" %}
+                {% elsif feature_value contains "N" %}
+                    {% assign feature_class = "featureN" %}
+                {% endif %}
+
+                <td class="{{feature_class}}">{{ feature_value }}</td>
             {% endfor %}
 
 
@@ -55,7 +89,7 @@ title: Devices
                     {% endif %}
                 {% endfor %}
             {% endfor %}
-            <td>{{ count }}</td>
+                <td>{{ count }}</td>
 
     </tr>
 {% endfor %}
@@ -75,7 +109,7 @@ title: Devices
     <li><strong>Y</strong> – Yes, fully implemented (or number of other working features)</li>
     <li><strong>P</strong> – Partially implemented</li>
     <li><strong>N</strong> – Not working yet</li>
-    <li><strong>?</strong> – Unknown</li>
+    <li><strong> </strong> – Untested</li>
     <li><strong>N/A</strong> – Not applicable (device does not have the feature)</li>
     <li><strong>^</strong> – Check details</li>
 </ul>

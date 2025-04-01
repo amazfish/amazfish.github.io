@@ -19,13 +19,13 @@ features:
   - id: "sync_activities"
     value: "N/A"
   - id: "calendar"
-    value: "?"
+    value: ""
   - id: "watchface_download"
     value: "N/A"
   - id: "firmware_upload"
     value: "Y"
   - id: "navigation"
-    value: "?"
+    value: ""
   - id: "battery_status"
     value: "Y"
   - id: "music_control"
@@ -35,7 +35,7 @@ features:
   - id: "weather"
     value: "Y"
   - id: "find_my_phone"
-    value: "?"
+    value: ""
 ---
 
 Infinitime is fast open-source firmware for the [Pine64 PineTime](https://pine64.org/devices/pinetime/).

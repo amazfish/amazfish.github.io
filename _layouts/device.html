@@ -2,6 +2,28 @@
 layout: default
 ---
 
+<style>
+.featureY {
+    background-color: lightgreen;
+    color: black;
+}
+
+.featureP {
+    background-color: orange;
+    color: black;
+}
+
+.featureNA {
+    background-color: gray;
+    color: white;
+}
+
+.featureUnk {
+    color: black;
+}
+</style>
+
+
 <h1> {{ page.name }} </h1>
 <img src="https://raw.githubusercontent.com/piggz/harbour-amazfish/refs/heads/master/ui/qml/pics/devices/{{ page.image }}" style="width:200px; float: right;"/>
 <a href="{{ page.link }}">{{ page.link }}</a> <br/>
@@ -16,25 +38,36 @@ Support level: {{ page.support }}
 {% endif %}
 
 <table>
-        {% for feature in page.features %}
-            {% case feature.id %}
-                {% when "pairing" %}              <tr><td>Pairing</td>                 <td>{{ feature.value }}</td></tr>
-                {% when "notifications" %}        <tr><td>Notifications</td>           <td>{{ feature.value }}</td></tr>
-                {% when "calls" %}                <tr><td>Calls</td>                   <td>{{ feature.value }}</td></tr>
-                {% when "settings" %}             <tr><td>Settings</td>                <td>{{ feature.value }}</td></tr>
-                {% when "alarms" %}               <tr><td>Alarms</td>                  <td>{{ feature.value }}</td></tr>
-                {% when "sync_steps_heartrate" %} <tr><td>Sync steps and heartrate</td><td>{{ feature.value }}</td></tr>
-                {% when "sync_activities" %}      <tr><td>Sync activities</td>         <td>{{ feature.value }}</td></tr>
-                {% when "calendar" %}             <tr><td>Calendar</td>                <td>{{ feature.value }}</td></tr>
-                {% when "watchface_download" %}   <tr><td>Watch face download</td>     <td>{{ feature.value }}</td></tr>
-                {% when "firmware_upload" %}      <tr><td>Firmware upload</td>         <td>{{ feature.value }}</td></tr>
-                {% when "navigation" %}           <tr><td>Navigation</td>              <td>{{ feature.value }}</td></tr>
-                {% when "battery_status" %}       <tr><td>Battery status </td>         <td>{{ feature.value }}</td></tr>
-                {% when "music_control" %}        <tr><td>Music Control</td>           <td>{{ feature.value }}</td></tr>
-                {% when "sync_time" %}            <tr><td>Sync Time</td>               <td>{{ feature.value }}</td></tr>
-                {% when "weather" %}              <tr><td>Weather</td>                 <td>{{ feature.value }}</td></tr>
-                {% when "find_my_phone" %}        <tr><td>Find my phone</td>           <td>{{ feature.value }}</td></tr>
-            {% endcase %}
-        {% endfor %}
+    {% for feature in page.features %}
+        {% assign feature_class = "featureUnk" %}
+        {% if feature.value contains "Y" %}
+            {% assign feature_class = "featureY" %}
+        {% elsif feature.value contains "P" %}
+            {% assign feature_class = "featureP" %}
+        {% elsif feature.value contains "N/A" %}
+            {% assign feature_class = "featureNA" %}
+        {% elsif feature.value contains "N" %}
+            {% assign feature_class = "featureN" %}
+        {% endif %}
+
+        {% case feature.id %}
+            {% when "pairing" %}              <tr><td>Pairing</td>                 <td class="{{ feature_class }}">{{ feature.value }}</td></tr>
+            {% when "notifications" %}        <tr><td>Notifications</td>           <td class="{{ feature_class }}">{{ feature.value }}</td></tr>
+            {% when "calls" %}                <tr><td>Calls</td>                   <td class="{{ feature_class }}">{{ feature.value }}</td></tr>
+            {% when "settings" %}             <tr><td>Settings</td>                <td class="{{ feature_class }}">{{ feature.value }}</td></tr>
+            {% when "alarms" %}               <tr><td>Alarms</td>                  <td class="{{ feature_class }}">{{ feature.value }}</td></tr>
+            {% when "sync_steps_heartrate" %} <tr><td>Sync steps and heartrate</td><td class="{{ feature_class }}">{{ feature.value }}</td></tr>
+            {% when "sync_activities" %}      <tr><td>Sync activities</td>         <td class="{{ feature_class }}">{{ feature.value }}</td></tr>
+            {% when "calendar" %}             <tr><td>Calendar</td>                <td class="{{ feature_class }}">{{ feature.value }}</td></tr>
+            {% when "watchface_download" %}   <tr><td>Watch face download</td>     <td class="{{ feature_class }}">{{ feature.value }}</td></tr>
+            {% when "firmware_upload" %}      <tr><td>Firmware upload</td>         <td class="{{ feature_class }}">{{ feature.value }}</td></tr>
+            {% when "navigation" %}           <tr><td>Navigation</td>              <td class="{{ feature_class }}">{{ feature.value }}</td></tr>
+            {% when "battery_status" %}       <tr><td>Battery status </td>         <td class="{{ feature_class }}">{{ feature.value }}</td></tr>
+            {% when "music_control" %}        <tr><td>Music Control</td>           <td class="{{ feature_class }}">{{ feature.value }}</td></tr>
+            {% when "sync_time" %}            <tr><td>Sync Time</td>               <td class="{{ feature_class }}">{{ feature.value }}</td></tr>
+            {% when "weather" %}              <tr><td>Weather</td>                 <td class="{{ feature_class }}">{{ feature.value }}</td></tr>
+            {% when "find_my_phone" %}        <tr><td>Find my phone</td>           <td class="{{ feature_class }}">{{ feature.value }}</td></tr>
+        {% endcase %}
+    {% endfor %}
 
 </table>
