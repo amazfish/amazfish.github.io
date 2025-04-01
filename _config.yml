@@ -3,6 +3,9 @@ description: Companion application for your smartwatch
 show_downloads: false
 # google_analytics:
 theme: jekyll-theme-slate
+github:
+  repository_url: http://github.com/piggz/harbour-amazfish
+  is_project_page: true
 
 collections:
   devices:

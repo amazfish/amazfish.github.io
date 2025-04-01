@@ -45,14 +45,12 @@ and open it up inside KEXI on Linux/Windows/Mac and perform queries and reports 
 installed automatically.
 
 
----
 
-Source: [https://github.com/piggz/harbour-amazfish](https://github.com/piggz/harbour-amazfish)
+## Credits
 
-Credits to:
+The [Gadgetbridge](https://codeberg.org/Freeyourgadget/Gadgetbridge) devs, which gave me a lot of hints and inspiration
+from their device code.
 
-    The Gadgetbridge devs, which gave me a lot of hints and inspiration from their device code.
-    https://codeberg.org/Freeyourgadget/Gadgetbridge
 
 ## ❤️ Donate
 
@@ -60,4 +58,8 @@ If you appreciate this project, consider supporting its development!
 
 [![Donate via PayPal](https://img.shields.io/badge/Donate-PayPal-blue.svg)](https://paypal.me/piggz)  
 
-Your support helps keep this project going. Thank you! 🙌  
+Your support helps keep this project going. Thank you! 🙌
+
+---
+
+Source: [https://github.com/piggz/harbour-amazfish](https://github.com/piggz/harbour-amazfish)
