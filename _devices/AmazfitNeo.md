@@ -6,7 +6,7 @@ features:
   - id: "pairing"
     value: "Y^"
   - id: "notifications"
-    value: "N/A"
+    value: "Y^"
   - id: "calls"
     value: "Y"
   - id: "settings"
@@ -38,3 +38,6 @@ features:
 ---
 
 * [Server Side Pairing Code](/Server-Side-Pairing)
+* The notification shows just “+1” but doesn’t provide any details. This can be annoying
+  in the case of a low battery notification. You simply don’t see the corresponding
+  notification on the phone.
