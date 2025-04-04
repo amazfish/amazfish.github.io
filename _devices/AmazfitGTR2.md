@@ -38,4 +38,4 @@ features:
     value: ""
 ---
 
-* [Note for GTR2 / GTS2 owners](Appearance)
+* [Note for GTR2 / GTS2 owners](/Appearance)
