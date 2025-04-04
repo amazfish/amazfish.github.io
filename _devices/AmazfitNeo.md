@@ -34,7 +34,7 @@ features:
   - id: "weather"
     value: "Y"
   - id: "find_my_phone"
-    value: ""
+    value: "Y"
 ---
 
 * [Server Side Pairing Code](/Server-Side-Pairing)
