@@ -44,7 +44,11 @@ they should have the ability to analyze it themselves, I have chosen to store da
 and open it up inside KEXI on Linux/Windows/Mac and perform queries and reports on it.  This added ability means I link to a couple of KDE libraries, which should be
 installed automatically.
 
+## Community
 
+Join the discussion, ask questions, or share your experience with other users:
+
+<a href='https://t.me/amazfish'><img width='240' alt='Join us on Telegram' src='https://telegram.org/img/t_logo.svg'/></a>
 
 ## Credits
 
