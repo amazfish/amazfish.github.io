@@ -30,12 +30,17 @@ layout: default
 
 
 <h1> {{ page.title }} </h1>
+
 <img src="https://raw.githubusercontent.com/piggz/harbour-amazfish/refs/heads/master/ui/qml/pics/devices/{{ page.image }}" style="width:200px; float: right;"/>
+
+<a href="https://github.com/piggz/harbour-amazfish/issues?q=is%3Aissue%20state%3Aopen%20label%3A%22{{ page.title | url_encode }}%22">
+    <img src="https://img.shields.io/github/issues-search/piggz/harbour-amazfish?query=is%3Aissue+state%3Aopen+label%3A%22{{ page.title | url_encode }}%22&label=bugs&color=red" alt="Open {{ page.title }} issues">
+</a> <br/>
+
 <a href="{{ page.link }}">{{ page.link }}</a> <br/>
 Support level: {{ page.support }}
 
 <br/><br/>
-
 
 {% if content %}
     {{ content }}
