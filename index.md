@@ -9,8 +9,10 @@ title: Home
 
 Companion application for Huami Devices (such as Amazfit Bip, Cor, MiBand2/3 and GTS and GTS) and the Pinetime Infinitime.
 
+Sourcecode: [https://github.com/piggz/harbour-amazfish](https://github.com/piggz/harbour-amazfish/issues).
+
 ## Installation
-* Install the ["chum" repository](https://chumrpm.netlify.app/) (by downloading the RPM file and running `devel-su pkcon install-local RPM_FILENAME` )
+* For Sailfish OS install the ["chum" repository](https://chumrpm.netlify.app/) (by downloading the RPM file and running `devel-su pkcon install-local RPM_FILENAME` )
 * Run `devel-su pkcon refresh`
 * Run `devel-su pkcon install harbour-amazfish`
 
@@ -55,15 +57,20 @@ Join the discussion, ask questions, or share your experience with other users:
 The [Gadgetbridge](https://codeberg.org/Freeyourgadget/Gadgetbridge) devs, which gave me a lot of hints and inspiration
 from their device code.
 
-
 ## ❤️ Donate
 
-If you appreciate this project, consider supporting its development!  
+If you appreciate this project, consider supporting its development!
 
-[![Donate via PayPal](https://img.shields.io/badge/Donate-PayPal-blue.svg)](https://paypal.me/piggz)  
+[![Donate via PayPal](https://img.shields.io/badge/Donate-PayPal-blue.svg)](https://paypal.me/piggz)
 
 Your support helps keep this project going. Thank you! 🙌
 
----
 
-Source: [https://github.com/piggz/harbour-amazfish](https://github.com/piggz/harbour-amazfish)
+## Contribute
+
+Every help is welcome!
+
+* Contribute code to Amazfish app by creating merge requests at [https://github.com/piggz/harbour-amazfish](https://github.com/piggz/harbour-amazfish).
+* Contribute to this documentation by creating merge requests at [https://github.com/amazfish/amazfish.github.io](https://github.com/amazfish/amazfish.github.io).
+* Help translating this app at [https://hosted.weblate.org/projects/harbour-amazfish/](https://hosted.weblate.org/projects/harbour-amazfish/).
+* Let us know about issues with Amazfish app by creating reports at [https://github.com/piggz/harbour-amazfish/issues](https://github.com/piggz/harbour-amazfish/issues).
