@@ -25,7 +25,7 @@ Companion application for Huami Devices (such as Amazfit Bip, Cor, MiBand2/3 and
 * [FAQs](FAQs)
 * [How to update AGPS](How-To-update-AGPS)
 * [Server Side Pairing Code](Server-Side-Pairing)
-* [Note for GTR2 / GTS2 owners](Appearance)
+* [Note for owners of GTR2 / GTS2 or newer](Appearance)
 * [Firmware download](firmware-download)
 * [Button Actions](button-actions) 
 * [Automatic Reconnecting](automatic-reconnecting)
