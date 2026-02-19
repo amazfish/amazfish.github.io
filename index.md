@@ -49,6 +49,7 @@ installed automatically.
 Join the discussion, ask questions, or share your experience with other users:
 
 <a href='https://t.me/amazfish'><img width='120' alt='Join us on Telegram' src='https://telegram.org/img/t_logo.svg'/></a>
+<a href="https://matrix.to/#/#amazfish:matrix.org"><img width="120" alt="Join us on Matrix" src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Matrix_icon.svg" /></a>
 
 ## Credits
 
