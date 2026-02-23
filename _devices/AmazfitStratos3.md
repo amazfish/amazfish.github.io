@@ -19,7 +19,7 @@ features:
     value: ""
   - id: "calendar"
     value: ""
-  - id: "watchface_download"
+  - id: "watchface_upload"
     value: ""
   - id: "firmware_upload"
     value: ""
