@@ -20,7 +20,7 @@ features:
     value: ""
   - id: "calendar"
     value: ""
-  - id: "watchface_download"
+  - id: "watchface_upload"
     value: ""
   - id: "firmware_upload"
     value: ""
@@ -38,4 +38,4 @@ features:
     value: ""
 ---
 
-* [Note for GTR2 / GTS2 owners](/Appearance)
+* [Note for owners of GTR2 / GTS2 or newer](/Appearance)

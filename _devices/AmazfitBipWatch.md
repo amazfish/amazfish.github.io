@@ -20,7 +20,7 @@ features:
     value: "Y"
   - id: "calendar"
     value: "N/A"
-  - id: "watchface_download"
+  - id: "watchface_upload"
     value: "Y"
   - id: "firmware_upload"
     value: ""

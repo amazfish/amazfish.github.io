@@ -56,7 +56,7 @@ title: Devices
                     <th>Other</th>
                 </tr>
 
-{% assign feature_ids = "sync_time,notifications,sync_steps_heartrate,calendar,music_control,pairing,calls,settings,alarms,sync_activities,watchface_download,firmware_upload,navigation,battery_status,weather,find_my_phone" | split: "," %}
+{% assign feature_ids = "sync_time,notifications,sync_steps_heartrate,calendar,music_control,pairing,calls,settings,alarms,sync_activities,watchface_upload,firmware_upload,navigation,battery_status,weather,find_my_phone" | split: "," %}
 {% assign primary_features = feature_ids | slice: 0, 5 %}
 {% assign remaining_features = feature_ids | slice: 5, feature_ids.size %}
 
@@ -114,9 +114,9 @@ title: Devices
     <li><strong>Y</strong> – Yes, fully implemented (or number of other working features)</li>
     <li><strong>P</strong> – Partially implemented</li>
     <li><strong>N</strong> – Not working yet</li>
-    <li><strong> </strong> – Untested</li>
+    <li><strong>empty field</strong> – Untested</li>
     <li><strong>N/A</strong> – Not applicable (device does not have the feature)</li>
-    <li><strong>^</strong> – Check details</li>
+    <li><strong>^</strong> – See devices page for details</li>
 </ul>
         </div>
 
