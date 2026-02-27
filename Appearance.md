@@ -10,7 +10,7 @@ characteristic is not readable at all, even though it is available, and this cau
 A patch has been added to Bluez which makes it not read the characteristic if it has been read and cached once. This allows us to work around the issue.
 
 * Pair your watch with Amazfish. For the moment ignore, that the connection will be unstable.
-* Turn off bluetooth on the phone and make sure the watch is not connected. Otherwise you can't write to the cached file.
+* Turn off Bluetooth on the phone and make sure the watch is not connected. Otherwise, you can't write to the cached file.
 * Find the info file in the devices cache folder. This is in /var/lib/bluetooth/[host mac address]/[watch mac address]/info.
 * Edit the info file as root and under the [General] heading add the line
 

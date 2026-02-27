@@ -3,7 +3,7 @@ layout: default
 ---
 # Build Instructions
 
-This instruction guide is written for the SailfishOS SDK and Debian based distributions including Ubuntu Touch, but may be also available for other Linux distributions, with some changes.
+This instruction guide is written for the SailfishOS SDK and Debian-based distributions including Ubuntu Touch, but may be also available for other Linux distributions, with some changes.
 
 ## SailfishOS SDK
 
@@ -29,7 +29,7 @@ To install missing packages, as pointed out by build errors, use:
 sb2 -R zypper in mpris-qt5-devel libkf5archive-devel kcoreaddons-devel kdb-devel libKDb3-3 mkcal-qt5-devel libicu-devel pulseaudio-devel ninja
 ```
 
-etc as pointed out by build errors.
+etc., as pointed out by build errors.
 (although ctrl-B should offer to install them)
 
 ## Debian based distributions
@@ -44,7 +44,7 @@ sudo apt update
 sudo apt install -y qtbase5-dev qtchooser qt5-qmake qtbase5-dev-tools libkdb3-dev libkf5contacts-dev libkf5archive-dev libkf5coreaddons-dev qtlocation5-dev qtconnectivity5-dev qtpositioning5-dev qml-module-qtbluetooth qml-module-qtquick-controls qml-module-qtquick-controls2 qml-module-qt-labs-settings qml-module-org-kde-kirigami2 qml-module-org-kde-bluezqt cmake ninja-build
 ```
 
-Two dependencies can be found on git repos
+Two dependencies can be found on git repositories
 https://github.com/sailfishos/nemo-qml-plugin-dbus
 and
 https://github.com/sailfishos/qtmpris.git/
@@ -112,7 +112,7 @@ to
 QT.KContacts.depends = KCoreAddons
 ```
 
-This can be done with the following command or an text editor of your choice:
+This can be done with the following command or a text editor of your choice:
 `sudo sed -i 's/QT.KContacts.depends = CoreAddons/QT.KContacts.depends = KCoreAddons/' /usr/lib/x86_64-linux-gnu/qt5/mkspecs/modules/qt_KContacts.pri`
 
 You can now run the `make` command again, and the build process should end successfully.

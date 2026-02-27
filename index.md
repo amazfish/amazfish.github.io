@@ -9,7 +9,7 @@ title: Home
 
 Companion application for Huami Devices (such as Amazfit Bip, Cor, MiBand2/3 and GTS) and the PineTime InfiniTime.
 
-Sourcecode: [https://github.com/piggz/harbour-amazfish](https://github.com/piggz/harbour-amazfish/issues).
+Source code: [https://github.com/piggz/harbour-amazfish](https://github.com/piggz/harbour-amazfish/issues).
 
 ## Installation
 * For Sailfish OS install the ["chum" repository](https://chumrpm.netlify.app/) (by downloading the RPM file and running `devel-su pkcon install-local RPM_FILENAME` )
