@@ -7,7 +7,7 @@ title: Home
 
 [![Translation status](https://hosted.weblate.org/widget/harbour-amazfish/svg-badge.svg)](https://hosted.weblate.org/engage/harbour-amazfish/)
 
-Companion application for Huami Devices (such as Amazfit Bip, Cor, MiBand2/3 and GTS and GTS) and the Pinetime Infinitime.
+Companion application for Huami Devices (such as Amazfit Bip, Cor, MiBand2/3 and GTS) and the PineTime InfiniTime.
 
 Sourcecode: [https://github.com/piggz/harbour-amazfish](https://github.com/piggz/harbour-amazfish/issues).
 
@@ -69,7 +69,7 @@ Your support helps keep this project going. Thank you! 🙌
 
 ## Contribute
 
-Every help is welcome!
+Any help is welcome!
 
 * Contribute code to Amazfish app by creating merge requests at [https://github.com/piggz/harbour-amazfish](https://github.com/piggz/harbour-amazfish).
 * Contribute to this documentation by creating merge requests at [https://github.com/amazfish/amazfish.github.io](https://github.com/amazfish/amazfish.github.io).

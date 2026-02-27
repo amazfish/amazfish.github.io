@@ -4,11 +4,11 @@ title: Button Actions
 ---
 ## Button Actions
 
-Bip and GTS notify when the watch button is pressed.  This is captured by Amazfish which allows running actions on theses presses.  An action can be ran on 2,3 or 4 presses.
+Bip and GTS notify when the watch button is pressed.  This is captured by Amazfish which allows running actions on these presses.  An action can be run on 2, 3 or 4 presses.
 To configure the actions, go to Settings > Application > Button Actions.
 
 A custom script can be used, the script must be called harbour-amazfish-script.sh and be in the home folder.
-Example which sends a OTP code to the watch as a message:
+Example which sends an OTP code to the watch as a message:
 
     #!/bin/sh
     if [ "$1" == "4" ]; then

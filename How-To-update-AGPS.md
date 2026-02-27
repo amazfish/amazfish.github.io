@@ -27,5 +27,5 @@ fi;
 
 ```
 
-  Change the method, email and passowrd to match your huami/amazfit account type (see the docs for huami-token)
-  - In Amazfish, Settings, Application, Button Actions, set the Tripe  Press Action to Custom Script
+  Change the method, email and password to match your huami/amazfit account type (see the docs for huami-token)
+  - In Amazfish, Settings, Application, Button Actions, set the Triple Press Action to Custom Script
