@@ -19,13 +19,13 @@ features:
   - id: "sync_activities"
     value: "Y"
   - id: "calendar"
-    value: ""
+    value: "N"
   - id: "watchface_upload"
-    value: ""
+    value: "N"
   - id: "firmware_upload"
     value: ""
   - id: "navigation"
-    value: ""
+    value: "N"
   - id: "battery_status"
     value: "Y"
   - id: "music_control"
@@ -35,7 +35,7 @@ features:
   - id: "weather"
     value: ""
   - id: "find_my_phone"
-    value: ""
+    value: "N"
 ---
 
 * [Note for owners of GTR2 / GTS2 or newer](/Appearance)
