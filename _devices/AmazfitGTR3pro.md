@@ -1,6 +1,6 @@
 ---
 image: "amazfit-gtr3.png"
-title: "Amazfit GTR 3"
+title: "Amazfit GTR 3 pro"
 link: "https://www.amazfit.com/"
 support: "Gold"
 features:
