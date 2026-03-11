@@ -63,6 +63,7 @@ from their device code.
 If you appreciate this project, consider supporting its development!
 
 [![Donate via PayPal](https://img.shields.io/badge/Donate-PayPal-blue.svg)](https://paypal.me/piggz)
+[![Donate via liberapay](https://img.shields.io/badge/Donate-Liberapay-blue.svg)](https://liberapay.com/adampigg)
 
 Your support helps keep this project going. Thank you! 🙌
 
