@@ -13,7 +13,7 @@ features:
   - id: "settings"
     value: ""
   - id: "alarms"
-    value: ""
+    value: "Y"
   - id: "sync_steps_heartrate"
     value: "Y"
   - id: "sync_activities"
