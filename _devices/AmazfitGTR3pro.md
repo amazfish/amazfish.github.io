@@ -23,7 +23,7 @@ features:
   - id: "watchface_upload"
     value: "N"
   - id: "firmware_upload"
-    value: ""
+    value: "N"
   - id: "navigation"
     value: "N"
   - id: "battery_status"
