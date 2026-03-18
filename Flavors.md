@@ -5,9 +5,9 @@ title: Flavors
 # SailfishOS
 - Available in the [Chum repository](https://sailfishos-chum.github.io/apps/harbour-amazfish/).
 
-<img src="https://github.com/piggz/harbour-amazfish/raw/master/screenshots/screenshot1.png" style="width: 200px"/>
-<img src="https://github.com/piggz/harbour-amazfish/raw/master/screenshots/screenshot2.png" style="width: 200px"/>
-<img src="https://github.com/piggz/harbour-amazfish/raw/master/screenshots/screenshot3.png" style="width: 200px"/>
+<img src="https://github.com/piggz/harbour-amazfish/raw/master/screenshots/screenshot_main.png" style="width: 200px"/>
+<img src="https://github.com/piggz/harbour-amazfish/raw/master/screenshots/screenshot_steps.png" style="width: 200px"/>
+<img src="https://github.com/piggz/harbour-amazfish/raw/master/screenshots/screenshot_heartrate.png" style="width: 200px"/>
 
 # Ubuntu Touch
 - Available in the [Open Store](https://open-store.io/app/uk.co.piggz.amazfish).
