@@ -25,6 +25,7 @@ Source code: [https://github.com/piggz/harbour-amazfish](https://github.com/pigg
 * [Devices](/devices)
 * [Flavors](Flavors)
 * [FAQs](FAQs)
+* [Integrations](Integrations)
 * [How to update AGPS](How-To-update-AGPS)
 * [Server Side Pairing Code](Server-Side-Pairing)
 * [Note for owners of GTR2 / GTS2 or newer](Appearance)
