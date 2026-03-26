@@ -16,15 +16,33 @@ AGPS files need to be downloaded from the Huami servers, then sent to the watch.
 ```
 #!/bin/sh
 if [ "$1" == "3" ]; then
-    dbus-send --session --print-reply --dest=uk.co.piggz.amazfish /application uk.co.piggz.amazfish.sendAlert string:'' string:'AGPS' string:'Downloading files...' boolean:true
+    dbus-send --session \
+        --dest=uk.co.piggz.amazfish \
+        --print-reply \
+        /application \
+         uk.co.piggz.amazfish.sendAlert \
+         dict:string:variant:"id,int32:1,appId,string:io.github.amazfish,appName,string:AGPS-script,summary,string:AGPS,body,string:Downloading files..."   boolean:false
+
     python3 ~/huami-token/huami_token.py -m <method> -g -e <email> -p <password>
-    dbus-send --session --print-reply --dest=uk.co.piggz.amazfish /application uk.co.piggz.amazfish.sendAlert string:'' string:'AGPS' string:'Uploading files...' boolean:true
+
+    dbus-send --session \
+        --dest=uk.co.piggz.amazfish \
+        --print-reply \
+        /application \
+         uk.co.piggz.amazfish.sendAlert \
+         dict:string:variant:"id,int32:1,appId,string:io.github.amazfish,appName,string:AGPS-script,summary,string:AGPS,body,string:Uploading files..."   boolean:false
+
     dbus-send --session --print-reply --dest=uk.co.piggz.amazfish /application uk.co.piggz.amazfish.prepareFirmwareDownload string:'/home/defaultuser/gps_uihh.bin'
     sleep 1
     dbus-send --session --print-reply --dest=uk.co.piggz.amazfish /application uk.co.piggz.amazfish.startDownload
-    dbus-send --session --print-reply --dest=uk.co.piggz.amazfish /application uk.co.piggz.amazfish.sendAlert string:'' string:'AGPS' string:'AGPS Update Started' boolean:true
-fi;
 
+    dbus-send --session \
+        --dest=uk.co.piggz.amazfish \
+        --print-reply \
+        /application \
+         uk.co.piggz.amazfish.sendAlert \
+         dict:string:variant:"id,int32:1,appId,string:io.github.amazfish,appName,string:AGPS-script,summary,string:AGPS,body,string:AGPS Update Started"   boolean:false
+fi;
 ```
 
   Change the method, email and password to match your huami/amazfit account type (see the docs for huami-token)
