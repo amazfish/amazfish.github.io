@@ -63,21 +63,36 @@ Support level: {% if page.support == "Gold" %}🥇 Gold{% elsif page.support == 
 
         {% case feature.id %}
             {% when "pairing" %}              <tr><td>Pairing</td>                 <td class="{{ feature_class }}">{{ feature.value }}</td></tr>
-            {% when "notifications" %}        <tr><td>Notifications</td>           <td class="{{ feature_class }}">{{ feature.value }}</td></tr>
             {% when "calls" %}                <tr><td>Calls</td>                   <td class="{{ feature_class }}">{{ feature.value }}</td></tr>
-            {% when "settings" %}             <tr><td>Settings</td>                <td class="{{ feature_class }}">{{ feature.value }}</td></tr>
-            {% when "alarms" %}               <tr><td>Alarms</td>                  <td class="{{ feature_class }}">{{ feature.value }}</td></tr>
-            {% when "sync_steps_heartrate" %} <tr><td>Sync steps and heartrate</td><td class="{{ feature_class }}">{{ feature.value }}</td></tr>
-            {% when "sync_activities" %}      <tr><td>Sync activities</td>         <td class="{{ feature_class }}">{{ feature.value }}</td></tr>
-            {% when "calendar" %}             <tr><td>Calendar</td>                <td class="{{ feature_class }}">{{ feature.value }}</td></tr>
-            {% when "watchface_upload" %}     <tr><td>Watch face upload</td>       <td class="{{ feature_class }}">{{ feature.value }}</td></tr>
-            {% when "firmware_upload" %}      <tr><td>Firmware upload</td>         <td class="{{ feature_class }}">{{ feature.value }}</td></tr>
             {% when "navigation" %}           <tr><td>Navigation</td>              <td class="{{ feature_class }}">{{ feature.value }}</td></tr>
             {% when "battery_status" %}       <tr><td>Battery status </td>         <td class="{{ feature_class }}">{{ feature.value }}</td></tr>
-            {% when "music_control" %}        <tr><td>Music Control</td>           <td class="{{ feature_class }}">{{ feature.value }}</td></tr>
             {% when "sync_time" %}            <tr><td>Sync Time</td>               <td class="{{ feature_class }}">{{ feature.value }}</td></tr>
-            {% when "weather" %}              <tr><td>Weather</td>                 <td class="{{ feature_class }}">{{ feature.value }}</td></tr>
             {% when "find_my_phone" %}        <tr><td>Find my phone</td>           <td class="{{ feature_class }}">{{ feature.value }}</td></tr>
+
+{% when "FEATURE_ALERT" %}                <tr><td>Notifications</td>              <td class="{{ feature_class }}">{{ feature.value }}</td></tr>
+{% when "FEATURE_HRM" %}                  <tr><td>Heart Rate Monitor</td>         <td class="{{ feature_class }}">{{ feature.value }}</td></tr>
+{% when "FEATURE_WEATHER" %}              <tr><td>Weather</td>                    <td class="{{ feature_class }}">{{ feature.value }}</td></tr>
+{% when "FEATURE_ACTIVITY" %}             <tr><td>Sync Activities</td>            <td class="{{ feature_class }}">{{ feature.value }}</td></tr>
+{% when "FEATURE_STEPS" %}                <tr><td>Steps</td>                      <td class="{{ feature_class }}">{{ feature.value }}</td></tr>
+{% when "FEATURE_ALARMS" %}               <tr><td>Alarms</td>                     <td class="{{ feature_class }}">{{ feature.value }}</td></tr>
+{% when "FEATURE_EVENT_REMINDER" %}       <tr><td>Calendar</td>                   <td class="{{ feature_class }}">{{ feature.value }}</td></tr>
+{% when "FEATURE_MUSIC_CONTROL" %}        <tr><td>Music Control</td>              <td class="{{ feature_class }}">{{ feature.value }}</td></tr>
+{% when "FEATURE_BUTTON_ACTION" %}        <tr><td>Button Action</td>              <td class="{{ feature_class }}">{{ feature.value }}</td></tr>
+{% when "FEATURE_SCREENSHOT" %}           <tr><td>Screenshot</td>                 <td class="{{ feature_class }}">{{ feature.value }}</td></tr>
+{% when "FEATURE_FILE_INSTALL" %}         <tr><td>Firmware Install</td>           <td class="{{ feature_class }}">{{ feature.value }}</td></tr>
+{% when "TYPE_DEBUGLOG" %}                <tr><td>Debug Log</td>                  <td class="{{ feature_class }}">{{ feature.value }}</td></tr>
+{% when "TYPE_ACTIVITY" %}                <tr><td>Activity Data</td>              <td class="{{ feature_class }}">{{ feature.value }}</td></tr>
+{% when "TYPE_GPS_TRACK" %}               <tr><td>GPS Track</td>                  <td class="{{ feature_class }}">{{ feature.value }}</td></tr>
+{% when "TYPE_STRESS" %}                  <tr><td>Stress</td>                     <td class="{{ feature_class }}">{{ feature.value }}</td></tr>
+{% when "TYPE_SPO2" %}                    <tr><td>SpO2</td>                       <td class="{{ feature_class }}">{{ feature.value }}</td></tr>
+{% when "TYPE_PAI" %}                     <tr><td>PAI</td>                        <td class="{{ feature_class }}">{{ feature.value }}</td></tr>
+{% when "TYPE_HEART_RATE" %}              <tr><td>Heart Rate</td>                 <td class="{{ feature_class }}">{{ feature.value }}</td></tr>
+{% when "TYPE_SLEEP_RESPIRATORY_RATE" %}  <tr><td>Sleep Respiratory Rate</td>     <td class="{{ feature_class }}">{{ feature.value }}</td></tr>
+{% when "TYPE_TEMPERATURE" %}             <tr><td>Temperature</td>                <td class="{{ feature_class }}">{{ feature.value }}</td></tr>
+{% when "TYPE_SLEEP" %}                   <tr><td>Sleep</td>                      <td class="{{ feature_class }}">{{ feature.value }}</td></tr>
+{% when "TYPE_HUAMI_STATISTICS" %}        <tr><td>Huami Statistics</td>           <td class="{{ feature_class }}">{{ feature.value }}</td></tr>
+{% when "TYPE_HRV" %}                     <tr><td>HRV</td>                        <td class="{{ feature_class }}">{{ feature.value }}</td></tr>
+
         {% endcase %}
     {% endfor %}
 

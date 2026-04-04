@@ -50,13 +50,15 @@ title: Devices
                     <th>Device</th>
                     <th>Sync Time</th>
                     <th>Notifications</th>
-                    <th>Sync Steps/HR</th>
+                    <th>HR Sync</th>
                     <th>Calendar</th>
                     <th>Music Control</th>
                     <th>Other</th>
                 </tr>
 
-{% assign feature_ids = "sync_time,notifications,sync_steps_heartrate,calendar,music_control,pairing,calls,settings,alarms,sync_activities,watchface_upload,firmware_upload,navigation,battery_status,weather,find_my_phone" | split: "," %}
+{% assign feature_ids = "sync_time,FEATURE_ALERT,TYPE_HEART_RATE,FEATURE_EVENT_REMINDER,FEATURE_MUSIC_CONTROL,pairing,calls,navigation,battery_status,find_my_phone,FEATURE_HRM,FEATURE_WEATHER,FEATURE_ACTIVITY,FEATURE_STEPS,FEATURE_ALARMS,FEATURE_BUTTON_ACTION,FEATURE_SCREENSHOT,FEATURE_FILE_INSTALL,TYPE_DEBUGLOG,TYPE_ACTIVITY,TYPE_GPS_TRACK,TYPE_STRESS,TYPE_SPO2,TYPE_PAI,TYPE_HEART_RATE,TYPE_SLEEP_RESPIRATORY_RATE,TYPE_TEMPERATURE,TYPE_SLEEP,TYPE_HUAMI_STATISTICS,TYPE_HRV" | split: "," %}
+
+
 {% assign primary_features = feature_ids | slice: 0, 5 %}
 {% assign remaining_features = feature_ids | slice: 5, feature_ids.size %}
 
