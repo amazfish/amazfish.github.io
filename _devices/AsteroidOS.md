@@ -1,7 +1,7 @@
 ---
 title: "Asteroid OS"
 image: "asteroidos.png"
-link: "https://asteroid.os/"
+link: "https://asteroidos.org/"
 features:
   - id: "pairing"
     value: "Y"
