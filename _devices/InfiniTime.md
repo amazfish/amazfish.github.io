@@ -33,7 +33,7 @@ features:
   - id: "FEATURE_MUSIC_CONTROL"
     value: "Y"
   - id: "FEATURE_BUTTON_ACTION"
-    value: "N"
+    value: "N/A"
   - id: "FEATURE_SCREENSHOT"
     value: "N/A"
   - id: "FEATURE_FILE_INSTALL"
