@@ -66,6 +66,8 @@ If you appreciate this project, consider supporting its development!
 [![Donate via PayPal](https://img.shields.io/badge/Donate-PayPal-blue.svg)](https://paypal.me/piggz)
 [![Donate via liberapay](https://img.shields.io/badge/Donate-Liberapay-blue.svg)](https://liberapay.com/adampigg)
 
+You can also donate an old smartwatch you no longer use. Smartwatch batteries often degrade over time, making the devices effectively e-waste for their owners, but they can still be extremely useful for development and testing.
+
 Your support helps keep this project going. Thank you! 🙌
 
 
