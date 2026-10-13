@@ -4,46 +4,17 @@ title: How to update AGPS
 ---
 ## How to update AGPS
 
-AGPS files need to be downloaded from the Huami servers, then sent to the watch.  This can be achieved with the following method
+With current A-GPS data the watch finds a GPS fix much faster. The data is downloaded from the Zepp (Huami)
+servers with [huami-token](https://codeberg.org/argrento/huami-token) and sent to the watch by Amazfish.
 
-1. Use the huami-token python tool to download the AGPS files
+Amazfish contains an example script that does both when you press the watch button three times:
+[contrib/agps](https://github.com/piggz/harbour-amazfish/tree/master/contrib/agps).
+Its README describes the setup:
 
-  - git clone https://github.com/piggz/huami-token
-2. Use the Amazfish custom button handling to script downloading the files and uploading to the device
+1. Install huami-token.
+2. Store your Zepp login in a file readable only by you.
+3. Test the download by hand.
+4. Copy the script to `~/harbour-amazfish-script.sh` and set the Triple Press Action to Custom Script
+   (see [Button Actions](button-actions)).
 
-  - Create a script harbour-amazfish-script.sh with the following content
-
-```
-#!/bin/sh
-if [ "$1" == "3" ]; then
-    dbus-send --session \
-        --dest=uk.co.piggz.amazfish \
-        --print-reply \
-        /application \
-         uk.co.piggz.amazfish.sendAlert \
-         dict:string:variant:"id,int32:1,appId,string:io.github.amazfish,appName,string:AGPS-script,summary,string:AGPS,body,string:Downloading files..."   boolean:false
-
-    python3 ~/huami-token/huami_token.py -m <method> -g -e <email> -p <password>
-
-    dbus-send --session \
-        --dest=uk.co.piggz.amazfish \
-        --print-reply \
-        /application \
-         uk.co.piggz.amazfish.sendAlert \
-         dict:string:variant:"id,int32:1,appId,string:io.github.amazfish,appName,string:AGPS-script,summary,string:AGPS,body,string:Uploading files..."   boolean:false
-
-    dbus-send --session --print-reply --dest=uk.co.piggz.amazfish /application uk.co.piggz.amazfish.prepareFirmwareDownload string:'/home/defaultuser/gps_uihh.bin'
-    sleep 1
-    dbus-send --session --print-reply --dest=uk.co.piggz.amazfish /application uk.co.piggz.amazfish.startDownload
-
-    dbus-send --session \
-        --dest=uk.co.piggz.amazfish \
-        --print-reply \
-        /application \
-         uk.co.piggz.amazfish.sendAlert \
-         dict:string:variant:"id,int32:1,appId,string:io.github.amazfish,appName,string:AGPS-script,summary,string:AGPS,body,string:AGPS Update Started"   boolean:false
-fi;
-```
-
-  Change the method, email and password to match your huami/amazfit account type (see the docs for huami-token)
-  - In Amazfish, Settings, Application, Button Actions, set the Triple Press Action to Custom Script
+A-GPS data covers about a week. Update it every few days, or before you go out with GPS.

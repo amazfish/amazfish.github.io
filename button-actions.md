@@ -11,8 +11,12 @@ A custom script can be used, the script must be called harbour-amazfish-script.s
 Example which sends an OTP code to the watch as a message:
 
     #!/bin/sh
-    if [ "$1" == "4" ]; then
-        CODE=`python3 -c 'import pyotp;totp = pyotp.TOTP("XXXX Authenticator code here XXXX");print(totp.now())'`
-        dbus-send --session --print-reply --dest=uk.co.piggz.amazfish /application uk.co.piggz.amazfish.sendAlert string:'' string:'Google OTP' string:$CODE boolean:true
-    fi;
+    if [ "$1" = "4" ]; then
+        CODE=$(python3 -c 'import pyotp;totp = pyotp.TOTP("XXXX Authenticator code here XXXX");print(totp.now())')
+        dbus-send --session --print-reply --dest=uk.co.piggz.amazfish /application uk.co.piggz.amazfish.sendAlert \
+            dict:string:variant:"id,int32:1,appId,string:io.github.amazfish,appName,string:OTP-script,summary,string:Google OTP,body,string:$CODE" \
+            boolean:true
+    fi
 
+
+For a longer example, see [How to update AGPS](How-To-update-AGPS).
