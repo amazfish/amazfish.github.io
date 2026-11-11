@@ -49,7 +49,7 @@ features:
   - id: "TYPE_SLEEP"
     value: "N"
   - id: "TYPE_HUAMI_STATISTICS"
-    value: "N"
+    value: "N/A"
   - id: "TYPE_HRV"
     value: "N"
 ---

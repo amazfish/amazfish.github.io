@@ -2,6 +2,8 @@
 title: "Amazfit Balance"
 image: "amazfit-balance.png"
 link: "https://www.amazfit.com/"
+# Hardware sources, for future reference:
+#   https://gadgetsandwearables.com/technical-specs/amazfit-balance/
 features:
   - id: "FEATURE_HRM"
     value: "Y"

@@ -3,6 +3,8 @@ title: "Amazfit GTR 2"
 image: "amazfit-gtr2.png"
 link: "https://www.amazfit.com/"
 support: "Gold"
+# Hardware sources, for future reference:
+#   https://www.wareable.com/smartwatches/amazfit-gts2-and-gtr2-features-specs-price-8102
 features:
   - id: "FEATURE_HRM"
     value: "Y"

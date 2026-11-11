@@ -2,6 +2,8 @@
 title: "Amazfit Stratos 3"
 image: "miband4.png"
 link: "https://www.amazfit.com/"
+# Hardware sources, for future reference:
+#   https://gadgetsandwearables.com/technical-specs/amazfit-stratos-3
 features:
   - id: "FEATURE_HRM"
     value: "Y"
@@ -26,7 +28,7 @@ features:
   - id: "FEATURE_FILE_INSTALL"
     value: "Y"
   - id: "FEATURE_SPO2"
-    value: "N"
+    value: "N/A"
   - id: "TYPE_DEBUGLOG"
     value: "N"
   - id: "TYPE_ACTIVITY"
@@ -36,7 +38,7 @@ features:
   - id: "TYPE_STRESS"
     value: "N"
   - id: "TYPE_SPO2"
-    value: "N"
+    value: "N/A"
   - id: "TYPE_PAI"
     value: "N"
   - id: "TYPE_HEART_RATE"
@@ -44,7 +46,7 @@ features:
   - id: "TYPE_SLEEP_RESPIRATORY_RATE"
     value: "N"
   - id: "TYPE_TEMPERATURE"
-    value: "N"
+    value: "N/A"
   - id: "TYPE_SLEEP"
     value: "Y"
   - id: "TYPE_HUAMI_STATISTICS"

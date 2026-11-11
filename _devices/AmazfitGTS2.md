@@ -3,6 +3,8 @@ title: "Amazfit GTS 2"
 image: "amazfit-gts2.png"
 link: "https://www.amazfit.com/"
 support: "Silver"
+# Hardware sources, for future reference:
+#   https://www.wareable.com/smartwatches/amazfit-gts2-and-gtr2-features-specs-price-8102
 features:
   - id: "FEATURE_HRM"
     value: "Y"

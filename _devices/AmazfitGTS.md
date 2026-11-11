@@ -3,6 +3,9 @@ title: "Amazfit GTS"
 image: "amazfit-gts.png"
 link: "https://www.amazfit.com/"
 support: "Gold"
+# Hardware sources, for future reference:
+#   https://gadgetsandwearables.com/technical-specs/amazfit-gts
+#   https://www.wareable.com/smartwatches/amazfit-gts2-and-gtr2-features-specs-price-8102
 features:
   - id: "FEATURE_HRM"
     value: "Y"
@@ -27,7 +30,7 @@ features:
   - id: "FEATURE_FILE_INSTALL"
     value: "Y"
   - id: "FEATURE_SPO2"
-    value: "N"
+    value: "N/A"
   - id: "TYPE_DEBUGLOG"
     value: "N"
   - id: "TYPE_ACTIVITY"
@@ -37,7 +40,7 @@ features:
   - id: "TYPE_STRESS"
     value: "N"
   - id: "TYPE_SPO2"
-    value: "N"
+    value: "N/A"
   - id: "TYPE_PAI"
     value: "N"
   - id: "TYPE_HEART_RATE"

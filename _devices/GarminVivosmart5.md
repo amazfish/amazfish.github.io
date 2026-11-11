@@ -3,6 +3,8 @@ title: "Garmin Vivosmart 5"
 image: "garminvivosmart5.png"
 link: "https://www.garmin.com/"
 support: ""
+# Hardware sources, for future reference:
+#   https://the5krunner.com/specs/garmin/vivosmart-5/
 features:
   - id: "FEATURE_HRM"
     value: "Y"
@@ -33,7 +35,7 @@ features:
   - id: "TYPE_ACTIVITY"
     value: "N"
   - id: "TYPE_GPS_TRACK"
-    value: "N"
+    value: "N/A"
   - id: "TYPE_STRESS"
     value: "N"
   - id: "TYPE_SPO2"
@@ -49,7 +51,7 @@ features:
   - id: "TYPE_SLEEP"
     value: "N"
   - id: "TYPE_HUAMI_STATISTICS"
-    value: "N"
+    value: "N/A"
   - id: "TYPE_HRV"
     value: "N"
 ---

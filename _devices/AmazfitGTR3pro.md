@@ -3,6 +3,8 @@ title: "Amazfit GTR 3 Pro"
 image: "amazfit-gtr3.png"
 link: "https://www.amazfit.com/"
 support: "Gold"
+# Hardware sources, for future reference:
+#   https://gadgetsandwearables.com/technical-specs/amazfit-gtr-3-pro/
 features:
   - id: "pairing"
     value: "Y"
