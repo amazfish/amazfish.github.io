@@ -5,6 +5,18 @@ link: "https://www.amazfit.com/"
 # Hardware sources, for future reference:
 #   https://gadgetsandwearables.com/technical-specs/amazfit-balance/
 features:
+  - id: "pairing"
+    value: "Y"
+  - id: "calls"
+    value: "Y"
+  - id: "navigation"
+    value: "N"
+  - id: "battery_status"
+    value: "Y"
+  - id: "sync_time"
+    value: "Y"
+  - id: "find_my_phone"
+    value: "N"
   - id: "FEATURE_HRM"
     value: "Y"
   - id: "FEATURE_WEATHER"

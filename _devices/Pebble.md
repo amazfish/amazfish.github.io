@@ -6,6 +6,18 @@ support: ""
 # Hardware sources, for future reference:
 #   https://gadgetsandwearables.com/technical-specs/pebble-time/
 features:
+  - id: "pairing"
+    value: ""
+  - id: "calls"
+    value: "N"
+  - id: "navigation"
+    value: "N"
+  - id: "battery_status"
+    value: "N"
+  - id: "sync_time"
+    value: "N"
+  - id: "find_my_phone"
+    value: "N"
   - id: "FEATURE_HRM"
     value: "N/A"
   - id: "FEATURE_WEATHER"

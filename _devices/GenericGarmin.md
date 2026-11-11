@@ -4,6 +4,18 @@ image: "garminepixpro.png"
 link: "https://www.garmin.com/"
 support: ""
 features:
+  - id: "pairing"
+    value: "Y"
+  - id: "calls"
+    value: "Y"
+  - id: "navigation"
+    value: "N"
+  - id: "battery_status"
+    value: "Y"
+  - id: "sync_time"
+    value: "P"
+  - id: "find_my_phone"
+    value: "N"
   - id: "FEATURE_HRM"
     value: "Y"
   - id: "FEATURE_WEATHER"
@@ -55,3 +67,5 @@ features:
 ---
 
 Garmin support is at an early stage. Heart rate and steps are shown live while the watch is connected. The app does not download history from the watch yet.
+
+* Time sync: the dates of summer time changes are not sent yet.

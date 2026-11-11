@@ -6,6 +6,18 @@ support: "Silver"
 # Hardware sources, for future reference:
 #   https://www.wareable.com/smartwatches/amazfit-gts2-and-gtr2-features-specs-price-8102
 features:
+  - id: "pairing"
+    value: "Y"
+  - id: "calls"
+    value: "Y"
+  - id: "navigation"
+    value: "P"
+  - id: "battery_status"
+    value: "Y"
+  - id: "sync_time"
+    value: "Y"
+  - id: "find_my_phone"
+    value: "Y"
   - id: "FEATURE_HRM"
     value: "Y"
   - id: "FEATURE_WEATHER"
@@ -57,3 +69,5 @@ features:
 ---
 
 * [Note for owners of GTR2 / GTS2 or newer](/Appearance)
+
+* Navigation: shown as notifications.

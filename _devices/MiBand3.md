@@ -6,6 +6,18 @@ support: "Bronze"
 # Hardware sources, for future reference:
 #   https://gadgetsandwearables.com/technical-specs/mi-band-3/
 features:
+  - id: "pairing"
+    value: "Y"
+  - id: "calls"
+    value: "Y"
+  - id: "navigation"
+    value: "P"
+  - id: "battery_status"
+    value: "Y"
+  - id: "sync_time"
+    value: "Y"
+  - id: "find_my_phone"
+    value: ""
   - id: "FEATURE_HRM"
     value: "Y"
   - id: "FEATURE_WEATHER"
@@ -55,3 +67,5 @@ features:
   - id: "TYPE_HRV"
     value: "N"
 ---
+
+* Navigation: shown as notifications.

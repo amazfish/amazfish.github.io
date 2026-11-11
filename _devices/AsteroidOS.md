@@ -7,6 +7,8 @@ features:
     value: "Y"
   - id: "calls"
     value: "Y"
+  - id: "navigation"
+    value: "N"
   - id: "battery_status"
     value: "Y"
   - id: "sync_time"

@@ -12,7 +12,7 @@ features:
   - id: "calls"
     value: "Y"
   - id: "navigation"
-    value: ""
+    value: "Y"
   - id: "battery_status"
     value: "Y"
   - id: "sync_time"
