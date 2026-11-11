@@ -19,25 +19,27 @@ features:
   - id: "FEATURE_HRM"
     value: "Y"
   - id: "FEATURE_WEATHER"
-    value: "Y"
+    value: "N"
   - id: "FEATURE_ACTIVITY"
     value: "Y"
   - id: "FEATURE_STEPS"
     value: "Y"
   - id: "FEATURE_ALARMS"
-    value: "Y"
+    value: "N"
   - id: "FEATURE_ALERT"
     value: "Y"
   - id: "FEATURE_EVENT_REMINDER"
-    value: "Y"
+    value: "N"
   - id: "FEATURE_MUSIC_CONTROL"
-    value: "Y"
+    value: "N"
   - id: "FEATURE_BUTTON_ACTION"
     value: "Y"
   - id: "FEATURE_SCREENSHOT"
     value: "N"
   - id: "FEATURE_FILE_INSTALL"
-    value: "Y"
+    value: "P"
+  - id: "FEATURE_SPO2"
+    value: "N"
   - id: "TYPE_DEBUGLOG"
     value: "N"
   - id: "TYPE_ACTIVITY"
@@ -65,3 +67,5 @@ features:
 ---
 
 * [Note for owners of GTR2 / GTS2 or newer](/Appearance)
+
+* Firmware install: only AGPS files can be installed.

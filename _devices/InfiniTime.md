@@ -38,6 +38,8 @@ features:
     value: "N/A"
   - id: "FEATURE_FILE_INSTALL"
     value: "Y"
+  - id: "FEATURE_SPO2"
+    value: "N/A"
   - id: "TYPE_DEBUGLOG"
     value: "N/A"
   - id: "TYPE_ACTIVITY"

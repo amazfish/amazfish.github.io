@@ -80,6 +80,7 @@ Support level: {% if page.support == "Gold" %}🥇 Gold{% elsif page.support == 
 {% when "FEATURE_BUTTON_ACTION" %}        <tr><td>Button Action</td>              <td class="{{ feature_class }}">{{ feature.value }}</td></tr>
 {% when "FEATURE_SCREENSHOT" %}           <tr><td>Screenshot</td>                 <td class="{{ feature_class }}">{{ feature.value }}</td></tr>
 {% when "FEATURE_FILE_INSTALL" %}         <tr><td>Firmware Install</td>           <td class="{{ feature_class }}">{{ feature.value }}</td></tr>
+{% when "FEATURE_SPO2" %}                 <tr><td>SpO2 Monitor</td>               <td class="{{ feature_class }}">{{ feature.value }}</td></tr>
 {% when "TYPE_DEBUGLOG" %}                <tr><td>Debug Log</td>                  <td class="{{ feature_class }}">{{ feature.value }}</td></tr>
 {% when "TYPE_ACTIVITY" %}                <tr><td>Activity Data</td>              <td class="{{ feature_class }}">{{ feature.value }}</td></tr>
 {% when "TYPE_GPS_TRACK" %}               <tr><td>GPS Track</td>                  <td class="{{ feature_class }}">{{ feature.value }}</td></tr>
